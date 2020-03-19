@@ -180,7 +180,6 @@ export class MapContainer extends Component {
 }
 
 const APIkey3 = process.env.REACT_APP_GOOGLE_KEY;
-console.log(APIkey3);
 
 export default GoogleApiWrapper({
   apiKey: APIkey3
