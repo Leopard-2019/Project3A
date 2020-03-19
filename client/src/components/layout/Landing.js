@@ -8,8 +8,6 @@ class Landing extends Component {
       <div
         style={{
           height: "75vh",
-          background: "lightyellow",
-          opacity: "0.8",
           height: "300px",
           position: "fixed",
           top: "300px",
