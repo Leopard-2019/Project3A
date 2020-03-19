@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import { render } from "react-dom";
 
+const APIkey4 = process.env.REACT_APP_NEWS_KEY;
+
+
 class NewsCard extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +14,7 @@ class NewsCard extends Component {
   }
   componentDidMount() {
     fetch(
-      "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=381c62fd27614fcc9a63adf478bdd823&limit=10"
+      "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=" + APIkey4 + "&limit=10"
     )
       .then(response => {
         return response.json();
