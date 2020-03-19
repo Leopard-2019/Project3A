@@ -8,7 +8,19 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-links">
         <ul id="nav-mobile" class="right">
-        <img src={icon} className="Icon"/>
+          <img src={icon} className="Icon" />
+          <li>
+            <Link
+              className={
+                window.location.pathname === "/" ||
+                window.location.pathname === "/about"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              WELL-MART Health Providers & Pharmaceutical Services
+            </Link>
+          </li>
           <li>
             <Link
               to="/login"
@@ -22,19 +34,6 @@ function Navbar() {
               Login/Logout
             </Link>
           </li>
-          {/* <li>
-            <Link
-              to="/"
-              className={
-                window.location.pathname === "/" ||
-                window.location.pathname === "/about"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Home
-            </Link>
-          </li> */}
           <li>
             <Link
               to="/discover"

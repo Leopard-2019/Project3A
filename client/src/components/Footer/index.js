@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div class="container">
-        <div>
+        {/* <div>
           <a target="_blank" class="social-icons" href="">
             <img
               src="https://cdn-static.findly.com/wp-content/uploads/sites/194/2016/04/facebook.png"
@@ -36,7 +36,7 @@ function Footer() {
               alt="LinkedIn"
             ></img>
           </a>
-        </div>
+        </div> */}
         <p>
           Copyright 2019
           <a href="" class="footer-links">

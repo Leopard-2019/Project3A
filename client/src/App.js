@@ -46,7 +46,6 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Header />
             <Navbar />
             <Route exact path="/Navbar" component={Navbar} />
             <Route exact path="/" component={Landing} />
@@ -60,7 +59,6 @@ class App extends Component {
               <PrivateRoute exact path="/search" component={DiscoverCard2} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>
-            <SubFooter />
             <Footer />
           </div>
         </Router>
