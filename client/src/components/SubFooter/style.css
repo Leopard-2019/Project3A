@@ -1,0 +1,14 @@
+.SubFooter {
+  background-color: lightgrey;
+  color: #006a51;
+  position: fixed;
+  width: 100%;
+  bottom: 15%;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  border-style: double;
+  border-color: brown;
+}

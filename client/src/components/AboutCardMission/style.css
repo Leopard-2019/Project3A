@@ -1,0 +1,9 @@
+.AboutCardBody {
+  background-color: lightyellow;
+  padding: 20px;
+  text-align: justify;
+  border-style: double;
+}
+strong {
+  font-weight: bold !important;
+}

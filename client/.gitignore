@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+#api key
+.env
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+REACT_APP_ZIPCODE_KEY=hPlLvWe8CJBQcWe4nveaNl1QcWYmDofqmHiu1UR16I1YB0l7hmRflWRfznO8GwId
+REACT_APP_BETDOC_KEY=7bc5dd1a6cae9445c203fbf5d2c1d1cc
+REACT_APP_GOOGLE_KEY=AIzaSyCB4wg9-CH6VEhpkHAvW-FnldCeh4Hojm8

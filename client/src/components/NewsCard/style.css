@@ -1,0 +1,24 @@
+.newsImage {
+  padding-left: 15%;
+}
+.moreNews {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+}
+.newsBox {
+  border-style: double;
+  background-color: #ffffe0;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 100px;
+  width: 100%;
+}
+.apiCard {
+  overflow: hidden;
+}
+.apiImage {
+  width: fit-content;
+  height: fit-content;
+}

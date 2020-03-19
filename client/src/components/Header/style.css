@@ -1,0 +1,15 @@
+.Header {
+  background-color: lightgrey;
+  border-style: double;
+  border-color: brown;
+}
+
+.headerText {
+  color: #006a51;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 20px;
+  font-size: 33px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}

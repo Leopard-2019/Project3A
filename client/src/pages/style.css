@@ -1,0 +1,24 @@
+.rowC {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%; */
+}
+.rowD {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-right: 0px;
+  margin-bottom: 5%;
+  /* background-color: cornsilk; */
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%; */
+}
+.loginCard {
+  padding: 25%;
+}

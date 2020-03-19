@@ -1,0 +1,30 @@
+.footer {
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  padding: 8px;
+  background: #006a51;
+  border-style: double;
+  border-color: brown;
+}
+
+.footer-links {
+  color: silver;
+}
+
+.footerSocialIcons {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+}
+
+.bodyContent {
+  text-align: left;
+}
+
+.social-icons {
+  padding-left: 15px;
+}
