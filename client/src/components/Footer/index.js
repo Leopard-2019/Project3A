@@ -38,7 +38,7 @@ function Footer() {
           </a>
         </div> */}
         <p>
-          Copyright 2019
+          Copyright 2020
           <a href="" class="footer-links">
             {" "}
             WELL-MART Healthcare and Pharmaceutical Services, Inc.

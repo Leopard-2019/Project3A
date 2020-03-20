@@ -11,12 +11,12 @@ function Navbar() {
           <img src={icon} className="Icon" />
           <li>
             <Link
-              className={
-                window.location.pathname === "/" ||
-                window.location.pathname === "/about"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
+              // className={
+              //   window.location.pathname === "/" ||
+              //   window.location.pathname === "/about"
+              //     ? "nav-link active"
+              //     : "nav-link"
+              // }
             >
               WELL-MART Health Providers & Pharmaceutical Services
             </Link>
