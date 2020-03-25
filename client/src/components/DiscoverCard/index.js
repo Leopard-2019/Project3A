@@ -49,8 +49,10 @@ export class MapContainer extends Component {
       .catch(err => this.setState({ error: err.location }));
   };
 
+
   secondfunc = () => {
     API.getDoctor(this.state.laT1, this.state.lnG1).then(res => {
+      console.log(res.data);
       const results = Object.keys(res.data).map(i => res.data[i]);
       var newStateArray = this.state.elements.slice();
       for (var i = 0; i < results[1].length; i++) {

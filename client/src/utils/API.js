@@ -17,7 +17,7 @@ export default {
   },
   getDoctor: function(laT1, lnG1) {
     return axios.get(
-      "https://api.betterdoctor.com/2016-03-01/practices?location=" +
+      "https://api.betterdoctor.com/2016-03-01/doctors?location=" +
         laT1 +
         "," +
         lnG1 +
