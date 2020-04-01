@@ -12,8 +12,9 @@ h2 {
   background-color: #ffffe0;
   text-align: center;
   margin-top: 5%;
-  margin-left: 100px;
-  width: 100%;
+  margin-left: 50px;
+  margin-right: 10px;
+  width: 80%;
 }
 .apiCard {
   overflow: hidden;
