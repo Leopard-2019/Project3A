@@ -7,10 +7,6 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-links">
-        <Link
-        >
-          WELL-MART Health Providers & Pharmaceutical Services
-        </Link>
         <ul id="nav-mobile" class="right">
           <img src={icon} className="Icon" />
           <li>

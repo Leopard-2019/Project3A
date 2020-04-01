@@ -11,7 +11,8 @@ function Header() {
           <div class="row">
             <div class="col-md-12">
               <h1 className="headerText">
-                WELL-MART Health Providers & Pharmaceutical Services
+                WELL-MART Health Providers & Pharmaceutical Services Miami-Dade
+                County Area
               </h1>
             </div>
           </div>

@@ -13,6 +13,7 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import About from "./pages/About";
 import News from "./pages/News";
+import Header from "./components/Header";
 import "./App.css";
 import Navbar from "../src/components/Navbar";
 import Footer from "./components/Footer";
@@ -45,6 +46,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Navbar />
+            <Header />
             <Route exact path="/Navbar" component={Navbar} />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
