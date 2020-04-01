@@ -1,8 +1,9 @@
 #dependencies
 /node_modules
 
-#api keys
+#api key
 .env
+
 
 
 
