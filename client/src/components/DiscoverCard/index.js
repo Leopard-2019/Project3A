@@ -68,7 +68,7 @@ export class MapContainer extends Component {
           Math.sin(dLon / 2);
       var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       var d1 = R * c;
-      if (d1 < 10) {
+      if (d1 < 5) {
         newStateArray.push({
           id: doctor[i].id,
           lat: doctor[i].lat,
