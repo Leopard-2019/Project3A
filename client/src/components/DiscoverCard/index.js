@@ -13,7 +13,6 @@ export class MapContainer extends Component {
     zipcode: "",
     doctor: doctor,
     elements: [],
-    elements1: [],
     activeMarker: {},
     selectedPlace: {},
     selectedSpeciality: {},
