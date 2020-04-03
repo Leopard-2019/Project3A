@@ -164,7 +164,7 @@ export class MapContainer extends Component {
               google={this.props.google}
               onClick={this.onMapClick}
               zoom={14}
-              initialCenter={{ lat: 25.827848, lng: -80.316078 }}
+              initialCenter={{ lat: 25.5516, lng: -80.6327 }}
               style={{ height: "50%", position: "relative", width: "50%" }}
             >
               {this.displayMarkers()}
