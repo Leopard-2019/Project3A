@@ -44,7 +44,7 @@ function Footer() {
             WELL-MART Healthcare and Pharmaceutical Services, Inc.
           </a>{" "}
           All rights reserved.
-          <p class="footer-links">
+          {/* <p class="footer-links">
             <a href="" title="contact us" class="footer-links">
               Contact Us |
             </a>
@@ -56,7 +56,7 @@ function Footer() {
               {" "}
               Privacy Policy
             </a>
-          </p>
+          </p> */}
         </p>
       </div>
     </footer>
