@@ -15,6 +15,8 @@ This app covered the following requirements:
 - Backed by Mongo DB Database
 - API key not exposed
 
+Below are shown all the functionalities available in this app:
+
 Login Page:
 
 ![](client/public/Project3_1.png)
