@@ -23,7 +23,7 @@ Sucessful Login:
 
 ![](client/public/Project3_2.png)
 
-User types a zipcode with the Miami-Dade County area, and results are shown on a google map where symbols indicate doctor's office.
+User types a zipcode within the Miami-Dade County area, and results are shown on a google map where symbols indicate doctor's office.
 
 ![](client/public/Project3_3.png)
 
