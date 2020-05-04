@@ -15,16 +15,30 @@ This app covered the following requirements:
 - Backed by Mongo DB Database
 - API key not exposed
 
+Login Page:
+
 ![](client/public/Project3_1.png)
+
+Sucessfull Login:
 
 ![](client/public/Project3_2.png)
 
+User types a zipcode with the Miami-Dade County area, and results are shown on a google map where symbols indicate doctor's office.
+
 ![](client/public/Project3_3.png)
+
+When user clicks on any symbol, the complete doctor's information is displayed: 
 
 ![](client/public/Project3_4.png)
 
+User types a zipcode with the Miami-Dade County area, and results are shown on a google map where symbols indicate pharmacy's office.
+
 ![](client/public/Project3_5.png)
 
+When user clicks on any symbol, the complete pharmacy's information is displayed: 
+
 ![](client/public/Project3_6.png)
+
+Update Health's news are also available in the app:
 
 ![](client/public/Project3_7.png)
