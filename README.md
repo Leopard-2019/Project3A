@@ -15,4 +15,4 @@ This app covered the following requirements:
 - Backed by Mongo DB Database
 - API key not exposed
 
-
+![](client/public/Project3_1.png)
