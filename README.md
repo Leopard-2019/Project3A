@@ -19,7 +19,7 @@ Login Page:
 
 ![](client/public/Project3_1.png)
 
-Sucessfull Login:
+Sucessful Login:
 
 ![](client/public/Project3_2.png)
 
