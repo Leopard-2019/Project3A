@@ -2,15 +2,17 @@ const express = require("express");
 const passport = require("passport");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const path = require("path");
+
+require("dotenv").config();
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
 const users = require("./routes/api/users");
 
 // Bodyparser middleware
+
 app.use(
   bodyParser.urlencoded({
     extended: false,
@@ -21,16 +23,12 @@ app.use(bodyParser.json());
 // DB Config
 const db = require("./config/keys").mongoURI;
 
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+const uri = process.env.ATLAS_URI;
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/authologin");
+mongoose
+  .connect(uri)
+  .then(() => console.log("MongoDB connection established."))
+  .catch((error) => console.error("MongoDB connection failed:", error.message));
 
 // Passport middleware
 app.use(passport.initialize());
