@@ -21,7 +21,7 @@ export class MapContainer extends Component {
     selectedCity: {},
     selectedState: {},
     selectedZip: {},
-    showingInfoWindow: false
+    showingInfoWindow: false,
   };
 
   componentDidMount() {
@@ -30,26 +30,31 @@ export class MapContainer extends Component {
 
   loadZipCode = () => {
     API.getZipCode()
-      .then(res => this.setState({ location: res.data, lat: "", lng: "" }))
-      .catch(err => console.log(err));
+      .then((res) => this.setState({ location: res.data, lat: "", lng: "" }))
+      .catch((err) => console.log(err));
   };
 
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     this.setState({ zipcode: event.target.value });
   };
 
-  handleFormSubmit = event => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
     API.getZipCode(this.state.zipcode)
-      .then(res => {
+      .then((res) => {
         if (res.data.status === "error") {
           throw new Error(res.data.location);
         }
-        this.setState({ laT1: res.data.lat, lnG1: res.data.lng });
+        let zip = this.state.zipcode;
+        console.log(zip);
+        let laT11 = res.data.results[zip][0].latitude;
+        let lnG11 = res.data.results[zip][0].longitude;
+        console.log(laT11, lnG11);
+        this.setState({ laT1: laT11, lnG1: lnG11 });
         console.log(this.state.laT1, this.state.lnG1);
         this.secondfunc(this.state.laT1, this.state.lnG1);
       })
-      .catch(err => this.setState({ error: err.location }));
+      .catch((err) => this.setState({ error: err.location }));
   };
 
   secondfunc = () => {
@@ -78,7 +83,7 @@ export class MapContainer extends Component {
           city: drugstore[i].city,
           state: drugstore[i].state,
           zip: drugstore[i].zipcode,
-          phone: drugstore[i].phone
+          phone: drugstore[i].phone,
         });
       }
     }
@@ -95,22 +100,22 @@ export class MapContainer extends Component {
       selectedState: props,
       selectedZip: props,
       activeMarker: marker,
-      showingInfoWindow: true
+      showingInfoWindow: true,
     });
   };
 
   onInfoWindowClose = () => {
     this.setState({
       activeMarker: null,
-      showingInfoWindow: false
+      showingInfoWindow: false,
     });
   };
 
-  onMapClick = props => {
+  onMapClick = (props) => {
     if (this.state.showingInfoWindow) {
       this.setState({
         showingInfoWindow: false,
-        activeMarker: null
+        activeMarker: null,
       });
     }
   };
@@ -124,7 +129,7 @@ export class MapContainer extends Component {
           onClick={this.onMarkerClick}
           position={{
             lat: element.lat,
-            lng: element.long
+            lng: element.long,
           }}
           name={element.name}
           street={element.street}
@@ -133,7 +138,7 @@ export class MapContainer extends Component {
           zip={element.zip}
           phone={element.phone}
           icon={{
-            url: "https://img.icons8.com/dusk/64/000000/pharmacist.png"
+            url: "https://img.icons8.com/dusk/64/000000/pharmacist.png",
           }}
         />
       );
@@ -170,8 +175,7 @@ export class MapContainer extends Component {
                 // onClick={this.onMarkerClick}
                 position={{ lat: this.state.laT1, lng: this.state.lnG1 }}
                 icon={{
-                  url:
-                    "https://img.icons8.com/color/48/000000/worldwide-location.png"
+                  url: "https://img.icons8.com/color/48/000000/worldwide-location.png",
                 }}
               />
               <InfoWindow
@@ -179,7 +183,9 @@ export class MapContainer extends Component {
                 onClose={this.onInfoWindowClose}
                 visible={this.state.showingInfoWindow}
               >
-                <div style={{color:"red"}}><strong>{this.state.selectedPlace.name}</strong></div>
+                <div style={{ color: "red" }}>
+                  <strong>{this.state.selectedPlace.name}</strong>
+                </div>
                 <div>{this.state.selectedStreet.street},</div>
                 <div>
                   {this.state.selectedCity.city},{" "}
@@ -200,5 +206,5 @@ export class MapContainer extends Component {
 const APIkey3 = process.env.REACT_APP_GOOGLE_KEY;
 
 export default GoogleApiWrapper({
-  apiKey: APIkey3
+  apiKey: APIkey3,
 })(MapContainer);

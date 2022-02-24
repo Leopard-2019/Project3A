@@ -26,11 +26,7 @@ const APIkey1 = process.env.REACT_APP_ZIPCODE_KEY;
 export default {
   getZipCode: function (zipcode) {
     return axios.get(
-      "https://cors-anywhere.herokuapp.com/https://www.zipcodeapi.com/rest/" +
-        APIkey1 +
-        "/info.json/" +
-        zipcode +
-        "/degrees"
+      `https://app.zipcodebase.com/api/v1/search?apikey=d4432520-9500-11ec-8bf3-df0e35543ab0&codes=${zipcode}&country=us`
     );
   },
 };
