@@ -1,4 +1,9 @@
 #dependencies
 /node_modules
-.env
 /config
+
+#api key
+.env
+
+#production
+/build
