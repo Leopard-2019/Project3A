@@ -2,7 +2,7 @@
 
 An innovative website which provides users with the ability to search for local pharmacies and doctors within the Miami-Dade county area. Additionally, this site not only provides local doctor and pharmacy information but also provides the most current health related news.
 
-This app is deployed at:  
+This app is deployed at:  https://wellmart77.herokuapp.com/
 
 This app covered the following requirements:
 
